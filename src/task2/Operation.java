@@ -1,30 +1,30 @@
 package task2;
 
-public class Operation implements Calculator{
+public class Operation implements Calculator {
     private int value1;
     private int value2;
     private String result;
 
     @Override
     public void addValue() {
-        this.result =  String.valueOf(this.value1 + this.value2);
+        this.result = String.valueOf(this.value1 + this.value2);
     }
 
     @Override
     public void subValue() {
-        this.result =  String.valueOf(this.value1 - this.value2);
+        this.result = String.valueOf(this.value1 - this.value2);
     }
 
     @Override
     public void multiplyValue() {
-        this.result =  String.valueOf(this.value1 * this.value2);
+        this.result = String.valueOf(this.value1 * this.value2);
     }
 
     @Override
     public void divideValue() {
-        if(this.value2 != 0){
+        if (this.value2 != 0) {
             this.result = String.valueOf(this.value1 / this.value2);
-        }else{
+        } else {
             this.result = "Tidak bisa dibagi dengan nol";
         }
     }
@@ -41,7 +41,7 @@ public class Operation implements Calculator{
         this.value2 = value2;
     }
 
-    void showResult(){
-        System.out.print("Hasil : "+this.getResult());
+    void showResult() {
+        System.out.print("Hasil : " + this.getResult());
     }
 }

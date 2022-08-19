@@ -12,8 +12,8 @@ public class Cat {
         cat.show_identity();
     }
 
-    private void show_identity(){
-        System.out.println("Saya Kucing dengan detail, Warna Bulu : "+this.full_color+" dengan Jumlah Kaki : "+this.num_of_leg);
+    private void show_identity() {
+        System.out.println("Saya Kucing dengan detail, Warna Bulu : " + this.full_color + " dengan Jumlah Kaki : " + this.num_of_leg);
     }
 
     public int getNum_of_leg() {

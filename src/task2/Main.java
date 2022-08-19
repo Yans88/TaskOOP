@@ -1,11 +1,7 @@
 package task2;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.io.Console;
-import java.io.IOException;
 import java.util.Scanner;
-import java.util.logging.Logger;
 
 public class Main {
 
@@ -18,10 +14,10 @@ public class Main {
         System.out.println("99: Exit");
         System.out.print("Masukkan pilihan anda : ");
         aksi = input.nextLine();
-        if(aksi.equalsIgnoreCase("1")){
+        if (aksi.equalsIgnoreCase("1")) {
 
             option1();
-        } else if (aksi.equalsIgnoreCase("99")){
+        } else if (aksi.equalsIgnoreCase("99")) {
             System.exit(0);
         } else {
             System.out.println("Kamu memasukkan pilihan yang salah!");
@@ -29,7 +25,7 @@ public class Main {
     }
 
 
-    public static void option1(){
+    public static void option1() {
         clearConsole();
         Scanner input = new Scanner(System.in);
         System.out.println("+++++ CALCULATOR +++++");
@@ -46,7 +42,7 @@ public class Main {
         }
     }
 
-    public static void operation(int value1, int value2){
+    public static void operation(int value1, int value2) {
 
         Scanner input = new Scanner(System.in);
         String operator;
@@ -62,19 +58,19 @@ public class Main {
         operator = input.nextLine();
         clearConsole();
         System.out.println("+++++ CALCULATOR +++++");
-        System.out.println("Pilihan anda : "+operator);
+        System.out.println("Pilihan anda : " + operator);
         Operation op = new Operation();
         op.setValue1(value1);
         op.setValue2(value2);
-        if(operator.equalsIgnoreCase("1")){
+        if (operator.equalsIgnoreCase("1")) {
             op.addValue();
-        } else if (operator.equalsIgnoreCase("2")){
+        } else if (operator.equalsIgnoreCase("2")) {
             op.subValue();
-        } else if (operator.equalsIgnoreCase("3")){
+        } else if (operator.equalsIgnoreCase("3")) {
             op.multiplyValue();
-        }else if (operator.equalsIgnoreCase("4")){
+        } else if (operator.equalsIgnoreCase("4")) {
             op.divideValue();
-        }else if (operator.equalsIgnoreCase("99")){
+        } else if (operator.equalsIgnoreCase("99")) {
             System.out.print("Anda keluar");
             System.exit(0);
         } else {
